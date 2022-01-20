@@ -1,7 +1,8 @@
 /*
 given an integer array nums, find the contigous subarray containing at least one nmumber which has the largest sum and retrn its sum
 */
-
+//[-2,1,-3,4,-1,2,1,-5,4]
+//O(T), O(1)
 function MaxSubArray(nums) {
   if (nums.length === 1) {
     return nums[0];
@@ -25,3 +26,5 @@ function MaxSubArray(nums) {
 
   return maxValue;
 }
+
+MaxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]);
