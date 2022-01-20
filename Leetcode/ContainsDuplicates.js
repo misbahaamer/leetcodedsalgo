@@ -4,6 +4,7 @@ given an integer array nums, return true if any value appears twice or return fa
 
 const params = [1, 2, 3, 1];
 
+//O(T), O(M)
 function Dups(params) {
   let mem = {};
   for (let index = 0; index < params.length; index++) {
@@ -17,6 +18,7 @@ function Dups(params) {
   console.log(false);
 }
 
+//O(T), O(1)
 function DupsSorted(params) {
   params.sort(function (a, b) {
     return a - b;
