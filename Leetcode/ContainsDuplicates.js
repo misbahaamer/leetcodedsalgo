@@ -1,3 +1,7 @@
+/*
+given an integer array nums, return true if any value appears twice or return false if any element is distinct
+*/
+
 const params = [1, 2, 3, 1];
 
 function Dups(params) {
