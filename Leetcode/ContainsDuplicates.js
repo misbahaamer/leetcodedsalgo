@@ -26,10 +26,11 @@ function DupsSorted(params) {
   for (let index = 0; index < params.length; index++) {
     if (index > 0 && params[index] === params[index - 1]) {
       console.log(true);
-      return;
+      return true;
     }
   }
   console.log(false);
+  return false;
 }
 
 DupsSorted(params);

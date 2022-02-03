@@ -23,8 +23,8 @@ function MaxSubArray(nums) {
   }
   //check if current number is Big or take previous stored number and use that
   //check if my accumulated number is bigger than maxvalye, if so replace it, accumulatednumber  = calculated value
-
+  console.log(maxValue)
   return maxValue;
 }
 
-MaxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]);
+MaxSubArray([1,2,1]);
