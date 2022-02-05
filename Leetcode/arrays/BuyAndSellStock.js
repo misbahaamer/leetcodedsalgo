@@ -15,7 +15,7 @@ function MaxProfit(params) {
   //check if my current purchase price is greater than old price replace my starting price
   //check if new starting price gives more profit than current tracked profit
   for (let i = 0; i < params.length - 1; i++) {
-    let tempProfit = params[i + 1] - prices[i];
+    let tempProfit = params[i + 1] - params[i];
     if (tempProfit > 0) {
       if (params[i] < buyPrice) {
         buyPrice = params[i];
